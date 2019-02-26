@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+    font-size: 12px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1.huge {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+h1.not-so-huge {
+    font-size: 4rem;
+    display: inline-block;
+}
+
+.circle-period::after {
+    content: '.';
+    font-family: serif;
+}
+
+.link-list {
+    padding: 0;
+    list-style: none;
+}
+.link-list li img {
+    height: 1.9rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+.link-list li a {
+    font-size: 1.6rem;
+    display: inline-block;
+}
+
+.sub-heading {
+    border-bottom: 2px solid #679;
+    height: 2rem;
+    margin-bottom: 3rem;
+}
+.sub-heading h2 {
+    color: #679;
+    background-color: white;
+    width: min-content;
+    padding-right: 1.5rem;
+}
