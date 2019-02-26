@@ -6,12 +6,14 @@ html {
 }
 
 h1.huge {
+    color: #679;
     font-size: 4rem;
     font-weight: bold;
     margin-right: 0.5rem;
     display: inline-block;
 }
 h1.not-so-huge {
+    color: #679;
     font-size: 4rem;
     display: inline-block;
 }
