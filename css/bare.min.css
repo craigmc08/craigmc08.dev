@@ -602,6 +602,9 @@ nav:not([class]) header a img,nav[xx] header a img{
     top:-1px;
     margin-right:1rem
 }
+nav:not([class]) header:before, nav[xx] header:before, nav:not([class]) header:after, nav[xx] header:after, nav:not([class]) * {
+    transition: transform 200ms ease-in-out, opacity 200ms linear;
+}
 @media (max-width:50rem){
     body{
         padding-top:4.4rem
@@ -629,11 +632,11 @@ nav:not([class]) header a img,nav[xx] header a img{
     nav:not([class]) label>ul,nav[xx] label>ul{
         position:fixed;
         top:4.4rem;
-        right:0;
+        right: -100vw;
         bottom:0;
         padding:0;
-        -webkit-transform:translate3d(100%,0,0);
-        transform:translate3d(100%,0,0);
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0);
         border-top:1px solid #679;
         text-align:left;
         background:#fff;
@@ -650,8 +653,8 @@ nav:not([class]) header a img,nav[xx] header a img{
         border:none
     }
     nav:not([class]) label input:checked~ul,nav[xx] label input:checked~ul{
-        -webkit-transform:none;
-        transform:none
+        -webkit-transform:translate3d(-100vw,0,0);
+        transform:translate3d(-100vw,0,0);
     }
     nav:not([class]) label input:checked~header:before,nav[xx] label input:checked~header:before{
         -webkit-transform:rotate(-180deg);
