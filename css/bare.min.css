@@ -53,7 +53,7 @@ a:not([class]),a[xx]{
     display:inline-block;
     z-index:1
 }
-p a:not([class]):not([btn]):before,p a[xx]:not([btn]):before{
+footer a:not([class]):not([btn]):before,footer a[xx]:not([btn]):before,p a:not([class]):not([btn]):before,p a[xx]:not([btn]):before{
     content:"";
     display:inline-block;
     width:100%;
@@ -65,11 +65,12 @@ p a:not([class]):not([btn]):before,p a[xx]:not([btn]):before{
     transform:scale3d(1,.1,1);
     -webkit-transform-origin:bottom;
     transform-origin:bottom;
-    z-index:-1
+    z-index:-1;
+    transition: transform 150ms ease-in-out;
 }
-p a:not([class]):not([btn]):hover:before,p a[xx]:not([btn]):hover:before{
-    -webkit-transform:none;
-    transform:none
+footer a:not([class]):not([btn]):hover:before,footer a[xx]:not([btn]):hover:before,p a:not([class]):not([btn]):hover:before,p a[xx]:not([btn]):hover:before{
+    -webkit-transform:scaled3d(1,.9,1);
+    transform:scale3d(1,.9,1);
 }
 blockquote:not([class]),blockquote[xx]{
     margin:2rem 0;
@@ -758,10 +759,10 @@ tag{
 [att]:after{
     content:attr(href)
 }
-:after,:before,a,button,input,menu,menuitem,select,textarea,tr,ul{
+/* :after,:before,a,button,input,menu,menuitem,select,textarea,tr,ul{
     -webkit-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out
-}
+} */
 h1:not([class]),h1[xx]{
     font-size:4rem;
     line-height:1.1;
