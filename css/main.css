@@ -48,3 +48,17 @@ h1.not-so-huge {
     width: min-content;
     padding-right: 1.5rem;
 }
+
+footer ul, footer h5 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+@media (max-width: 50rem) {
+    footer > grid > div:not(:last-child) {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 2rem;
+    }
+    footer > grid > div:not(:first-child) {
+        padding-top: 2rem;
+    }
+}
