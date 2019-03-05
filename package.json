@@ -1,0 +1,18 @@
+{
+  "name": "craigmc08.dev",
+  "version": "1.0.0",
+  "description": "Website at craigmc08.dev",
+  "main": "src/index.js",
+  "repository": "git@github.com:craigmc08/craigmc08.dev.git",
+  "author": "craigmc08 <craigmc08@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "rollup -f iife -i src/index.js -o dist/js/main.js -w -m",
+    "build": "rollup -f iife -i src/index.js -o dist/js/main.js"
+  },
+  "devDependencies": {
+    "rollup": "^1.4.1"
+  },
+  "dependencies": {}
+}
