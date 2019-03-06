@@ -9,10 +9,12 @@
   "private": true,
   "scripts": {
     "start": "rollup -c -w -m",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "build-templates": "node scripts/mustache-build.js"
   },
   "devDependencies": {
     "globby": "^9.1.0",
+    "mustache": "^3.0.1",
     "rollup": "^1.4.1",
     "rollup-plugin-node-resolve": "^4.0.1"
   },
