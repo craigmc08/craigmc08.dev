@@ -3,9 +3,10 @@ import anime from 'animejs';
 const projectCards = document.querySelectorAll('.project-card');
 
 projectCards.forEach(card => {
+    const cardName = card.id;
     const image = card.querySelector('img');
-    card.addEventListener('click', expandCard(image));
-    card.addEventListener('touch', expandCard(image));
+    card.addEventListener('click', expandCard(image, cardName));
+    card.addEventListener('touch', expandCard(image, cardName));
 });
 
 /**
@@ -37,7 +38,7 @@ function CreateProjectDetailSkeleton(parent) {
 /**
  * @param {HTMLElement} element 
  */
-function expandCard(element) {
+function expandCard(element, cardName) {
     return function(e) {
         const boundingRect = element.getBoundingClientRect();
     
@@ -69,7 +70,7 @@ function expandCard(element) {
         contentElement.appendChild(element);
         CreateProjectDetailSkeleton(contentElement);
 
-        window.location = '#raytracing';
+        window.location = `#${cardName}`;
         anime({
             targets: [element],
             maxHeight: '25rem',
@@ -87,7 +88,7 @@ function expandCard(element) {
             easing: 'easeInOutQuad',
             duration: 400,
             complete: (anim) => {
-                window.location = 'project-details.html';
+                window.location = `${cardName}.html`;
             },
         });
     }

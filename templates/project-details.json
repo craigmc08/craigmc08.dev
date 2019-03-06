@@ -1,0 +1,21 @@
+{
+    "multiFile": true,
+    "views": [
+        {
+            "name": "raytracing",
+            "view": {
+                "title": "raytracing",
+                "imageFile": "images/raytracing-splash.png",
+                "text": "<p>I started this raytracing project after reading about the postcard-sized raytracer. It just caught my fascination and I spent a few weeks building this program. The image above is an image that my program can render. <a href=\"https://github.com/craigmc08/raytracing/raw/master/renders/raymarcher.png\">Here's a link to a unscaled version.</a></p><p>I went through a few iterations of programs before arriving at my final structure. At first, I was writing fairly messy, 1 file programs while I was trying to understand how the raytracing works. Now, I'd say I have a fairly deep understanding of the mechanics of raymarched render engines, and the codebase I've developed makes it almost easy to write new scenes.</p>"
+            }
+        },
+        {
+            "name": "ski-heat-map",
+            "view": {
+                "title": "ski heat map",
+                "imageFile": "images/ski-heat-map-splash.png",
+                "text": "<p>This is project I started to visualize where I've skied over various ski seasons, or overall. The image above is the map of where I've skied this season (at Cannon Mountain in Franconia, NH). More yellow/brighter means that I have spent more time in that area.</p><p>The project creates a command-line tool to generate these heatmaps. Basic usage is <code>ski-heat-map ./tracks ./heatmap.png</code>. This pulls skiing data from the tracks folder. To collect the data, I used the <a href=\"https://www.corecoders.com/ski-tracks-app/\">Ski Tracks</a> app. More information can be found in the github repository.</p>"
+            }
+        }
+    ]
+}
