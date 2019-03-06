@@ -1,2 +1,117 @@
-import phrase from './testModule';
-console.log(phrase);
+import anime from 'animejs';
+
+const projectCards = document.querySelectorAll('.project-card');
+
+projectCards.forEach(card => {
+    const image = card.querySelector('img');
+    card.addEventListener('click', expandCard(image));
+    card.addEventListener('touch', expandCard(image));
+});
+
+/**
+ * Adds elements to create a blank skeleton for a project layout
+ * @param {HTMLElement} parent 
+ */
+function CreateProjectDetailSkeleton(parent) {
+    const cont = document.createElement('div');
+    cont.classList.add('place-pd-cont');
+    parent.appendChild(cont);
+    const createPlaceholder = () => {
+        const el = document.createElement('div');
+        return el;
+    }
+
+    const createText = () => {
+        const text = createPlaceholder();
+        text.classList.add('place-pd-text');
+        return text;
+    }
+    const heading = createPlaceholder();
+    heading.classList.add('place-pd-heading');
+    cont.appendChild(heading);
+    for (let i = 0; i < 3; i++) cont.appendChild(createText());
+    cont.appendChild(document.createElement('br'));
+    for (let i = 0; i < 2; i++) cont.appendChild(createText());
+}
+
+/**
+ * @param {HTMLElement} element 
+ */
+function expandCard(element) {
+    return function(e) {
+        const boundingRect = element.getBoundingClientRect();
+    
+        // Adjust the image element for the card
+        element.style.maxHeight = '50rem';
+        element.style.objectFit = 'cover';
+        element.style.width = '100%';
+        element.style.filter = 'brightness(100%)';
+
+        // Replace the image with a blank div to hold it space in the layout
+        const paddingElement = document.createElement('div');
+        paddingElement.style.width = boundingRect.width + 'px';
+        paddingElement.style.height = boundingRect.height + 'px';
+        element.parentNode.replaceChild(paddingElement, element);
+
+        // This holds the image and other content
+        const contentElement = document.createElement('div');
+        contentElement.style.position = 'fixed';
+        contentElement.style.bottom = (window.innerHeight - boundingRect.bottom) + 'px';
+        contentElement.style.left = boundingRect.left + 'px';
+        contentElement.style.width = boundingRect.width + 'px';
+        contentElement.style.height = boundingRect.height + 'px';
+        contentElement.style.zIndex = 11;
+        contentElement.style.backgroundColor = 'white';
+        contentElement.style.boxShadow = '0 5px 25px rgba(0, 0, 0, 0.3)';
+        contentElement.classList.add('pd-container');
+
+        document.body.appendChild(contentElement);
+        contentElement.appendChild(element);
+        CreateProjectDetailSkeleton(contentElement);
+
+        window.location = '#raytracing';
+        anime({
+            targets: [element],
+            maxHeight: '25rem',
+            filter: 'brightness(70%)',
+            easing: 'easeInOutQuad',
+            duration: 250,
+        });
+        anime({
+            targets: [contentElement],
+            left: '0px',
+            width: '100%',
+            bottom: '0px',
+            top: '0px',
+            height: '100%',
+            easing: 'easeInOutQuad',
+            duration: 400,
+            complete: (anim) => {
+                window.location = 'project-details.html';
+            },
+        });
+    }
+}
+
+const backButt = document.querySelector('.back-butt');
+if (backButt) backButt.addEventListener('click', () => {
+    // window.history.back();
+    const outer = document.querySelector('.outer');
+    if (outer) {
+        outer.style.position = 'fixed';
+        outer.style.left = '0px';
+        outer.style.top = '0px';
+        outer.style.width = '100%';
+        outer.style.height = '100%';
+        outer.style.transform = 'translateX(0)';
+        anime({
+            targets: [outer],
+            translateX: '100%',
+            duration: 250,
+            easing: 'easeInQuad',
+            complete: (anim) => {
+                window.history.back();
+            },
+        });
+    }
+});

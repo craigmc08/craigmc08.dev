@@ -8,11 +8,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "rollup -f iife -i src/index.js -o dist/js/main.js -w -m",
-    "build": "rollup -f iife -i src/index.js -o dist/js/main.js"
+    "start": "rollup -c -w -m",
+    "build": "rollup -c"
   },
   "devDependencies": {
-    "rollup": "^1.4.1"
+    "rollup": "^1.4.1",
+    "rollup-plugin-node-resolve": "^4.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "animejs": "^3.0.1"
+  }
 }
