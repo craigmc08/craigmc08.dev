@@ -1,0 +1,3 @@
+This is project I started to visualize where I've skied over various ski seasons, or overall. The image above is the map of where I've skied this season (at Cannon Mountain in Franconia, NH). More yellow/brighter means that I have spent more time in that area.
+
+The project creates a command-line tool to generate these heatmaps. Basic usage is `ski-heat-map ./tracks ./heatmap.png`. This pulls skiing data from the tracks folder. To collect the data, I used the [Ski Tracks](https://www.corecoders.com/ski-tracks-app/) app. More information can be found in the github repository.
