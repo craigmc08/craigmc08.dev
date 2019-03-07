@@ -24,6 +24,22 @@
                 "imageFile": "images/sketchroulette-splash.png",
                 "text": { "renderMarkdownFile": "templates/details/sketchroulette.md" }
             }
+        },
+        {
+            "name": "electric-fields",
+            "view": {
+                "title": "electric fields",
+                "imageFile": "images/electric-fields-splash.png",
+                "text": { "renderMarkdownFile": "templates/details/electric-fields.md" }
+            }
+        },
+        {
+            "name": "tokenary",
+            "view": {
+                "title": "tokenary",
+                "imageFile": "images/tokenary-splash.png",
+                "text": { "renderMarkdownFile": "templates/details/tokenary.md" }
+            }
         }
     ]
 }
