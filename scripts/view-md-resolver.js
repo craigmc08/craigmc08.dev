@@ -21,6 +21,10 @@ async function RecursiveResolver(view) {
     const markdownReference = view.renderMarkdownFile;
 
     if (isObject && !markdownReference) {
+        if (Array.isArray(view)) {
+            const resolvedView = await Promise.all(view.map(RecursiveResolver));
+            return resolvedView;
+        }
         const keys = Object.keys(view);
         const props = keys.map(key => view[key]);
         const resolvedProps = await Promise.all(props.map(RecursiveResolver));
