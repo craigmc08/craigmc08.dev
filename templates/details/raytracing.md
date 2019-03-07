@@ -1,0 +1,3 @@
+I started this raytracing project after reading about the postcard-sized raytracer. It just caught my fascination and I spent a few weeks building this program. The image above is an image that my program can render. [Here's a link to the unscaled version.](https://github.com/craigmc08/raytracing/raw/master/renders/raymarcher.png)
+
+I went through a few iterations of programs before arriving at my final structure. At first, I was writing fairly messy, 1 file programs while I was trying to understand how the raytracing works. Now, I'd say I have a fairly deep understanding of the mechanics of raymarched render engines, and the codebase I've developed makes it almost easy to write new scenes.

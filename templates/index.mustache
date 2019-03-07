@@ -1,0 +1,91 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+	<title>Craig McIlwrath</title>
+	
+	<meta charset=utf-8>
+	<meta name="description" content="craig mcilwrath">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	
+	<link href="css/bare.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/project-details.css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<label>
+			<input type="checkbox">
+			<header>
+				<a href="https://craigmc08.dev"><img src="images/logo.png">craig mcilwrath</a>
+			</header>
+			
+			<ul>
+				<li><a href="#home">home</a></li>
+				<li>
+					<a>projects</a>
+					<menu>
+                        {{#projects}}
+                        <menuitem>
+                            <a href="#{{id}}">{{title}}</a>
+                        </menuitem>
+                        {{/projects}}
+                    </menu>
+				</li>
+			</ul>
+		</label>
+	</nav>
+
+	<section mt- id="home">
+		<h1 class="huge circle-period">Hi</h1>
+		<h1 class="not-so-huge circle-period">I'm Craig McIlwrath</h1>
+		
+		<p fs="l">I like to program. I mainly code in javascript, but I'm comfortable with a bunch of other languages: Python, Java, C#, C++, to name a few. Check out my <a href="#projects">projects</a> to see what I'm working on.</p>
+	</section>
+
+	<section id="projects">
+		<div class="sub-heading">
+			<h2>projects</h2>
+		</div>
+
+		<p fs="l">
+			Here's a couple things I've been working on. To see (almost) everything else, take a look at my <a href="https://github.com/craigmc08">github profile</a>.
+		</p>
+
+		<grid>
+            {{#projects}}
+            <div col="1/3">
+                <card xx class="project-card" id="{{id}}">
+                    <img src="{{imageFile}}" />
+                    <h5>{{title}}</h5>
+                    {{{description}}}
+                    <p xx class="more">Tap card for more info</p>
+                    <a btn att href="{{repository}}">Github Repo</a>
+                </card>
+            </div>
+            {{/projects}}
+		</grid>
+	</section>
+
+	<footer>
+		<grid>
+			<div col="1/3">
+				<h5>Social Media</h5>
+				<ul class="link-list">
+                    {{#socialMedia}}
+                    <li><a att href="{{link}}"><img src="{{icon}}" />{{name}}</a></li>
+                    {{/socialMedia}}
+				</ul>
+			</div>
+			<div col="1/3">
+				<h5>Credits</h5>
+				<ul class="link-list">
+					<li><a att href="https://barecss.com">BareCSS</a></li>
+					<li><a att href="https://icons8.com">Icons from icons8</a></li>
+				</ul>
+			</div>
+		</grid>
+	</footer>
+
+	<script src="js/index.js"></script>
+</body>
+</html>

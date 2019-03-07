@@ -1,0 +1,45 @@
+{
+    "multiFile": true,
+    "views": [
+        {
+            "name": "raytracing",
+            "view": {
+                "title": "raytracing",
+                "imageFile": "images/raytracing-splash.png",
+                "text": { "renderMarkdownFile": "templates/details/raytracing.md" }
+            }
+        },
+        {
+            "name": "ski-heat-map",
+            "view": {
+                "title": "ski heat map",
+                "imageFile": "images/ski-heat-map-splash.png",
+                "text": { "renderMarkdownFile": "templates/details/ski-heat-map.md" }
+            }
+        },
+        {
+            "name": "sketchroulette",
+            "view": {
+                "title": "sketch roulette",
+                "imageFile": "images/sketchroulette-splash.png",
+                "text": { "renderMarkdownFile": "templates/details/sketchroulette.md" }
+            }
+        },
+        {
+            "name": "electric-fields",
+            "view": {
+                "title": "electric fields",
+                "imageFile": "images/electric-fields-splash.png",
+                "text": { "renderMarkdownFile": "templates/details/electric-fields.md" }
+            }
+        },
+        {
+            "name": "tokenary",
+            "view": {
+                "title": "tokenary",
+                "imageFile": "images/tokenary-splash.png",
+                "text": { "renderMarkdownFile": "templates/details/tokenary.md" }
+            }
+        }
+    ]
+}
