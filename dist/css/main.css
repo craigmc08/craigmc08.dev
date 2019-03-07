@@ -63,3 +63,14 @@ footer ul, footer h5 {
         padding-top: 2rem;
     }
 }
+
+card .more {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.25rem;
+}
+card a[btn] {
+    margin-bottom: 0;
+}
+card {
+    cursor: pointer;
+}

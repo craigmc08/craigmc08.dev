@@ -40,6 +40,8 @@ function CreateProjectDetailSkeleton(parent) {
  */
 function expandCard(element, cardName) {
     return function(e) {
+        if (e.target.nodeName === 'A') return;
+
         const boundingRect = element.getBoundingClientRect();
     
         // Adjust the image element for the card
