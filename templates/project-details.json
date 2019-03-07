@@ -16,6 +16,14 @@
                 "imageFile": "images/ski-heat-map-splash.png",
                 "text": "<p>This is project I started to visualize where I've skied over various ski seasons, or overall. The image above is the map of where I've skied this season (at Cannon Mountain in Franconia, NH). More yellow/brighter means that I have spent more time in that area.</p><p>The project creates a command-line tool to generate these heatmaps. Basic usage is <code>ski-heat-map ./tracks ./heatmap.png</code>. This pulls skiing data from the tracks folder. To collect the data, I used the <a href=\"https://www.corecoders.com/ski-tracks-app/\">Ski Tracks</a> app. More information can be found in the github repository.</p>"
             }
+        },
+        {
+            "name": "sketchroulette",
+            "view": {
+                "title": "sketch roulette",
+                "imageFile": "images/sketchroulette-splash.png",
+                "text": "<p>Sketch Roulette is an old project of mine. I've been working on it on and off for a few years at this point, getting closer to finishing it. It is an online (in-browser) game about drawing. You play with a few friends, sitting near you in real life. It's somewhat similar to Kahoot, but the gameplay is different. Each person is given an item to draw, and have a short amount of time to draw it. Then, the uncompleted drawings are swapped around, and the other people add onto your drawing, trying to guess what it is. At the end, all the drawings are shown and what it is revealed.</p><p>I wrote both the server and the client for Sketch Roulette. The server runs on node.js and uses Web Sockets for real time communication to the clients. The clients are built just with javascript and a few libraries.</p>"
+            }
         }
     ]
 }
