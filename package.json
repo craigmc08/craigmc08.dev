@@ -9,7 +9,8 @@
   "private": true,
   "scripts": {
     "start": "rollup -c -w -m",
-    "build": "rollup -c",
+    "build": "npm run build-scripts & npm run build-templates",
+    "build-scripts": "rollup -c",
     "build-templates": "node scripts/mustache-build.js"
   },
   "devDependencies": {
