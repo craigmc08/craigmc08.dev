@@ -45,7 +45,7 @@ function expandCard(element, cardName) {
         const boundingRect = element.getBoundingClientRect();
     
         // Adjust the image element for the card
-        element.style.maxHeight = '50rem';
+        element.style.maxHeight = '25rem';
         element.style.objectFit = 'cover';
         element.style.width = '100%';
         element.style.filter = 'brightness(100%)';
@@ -72,26 +72,27 @@ function expandCard(element, cardName) {
         contentElement.appendChild(element);
         CreateProjectDetailSkeleton(contentElement);
 
-        window.location = `#${cardName}`;
-        anime({
-            targets: [element],
-            maxHeight: '25rem',
-            filter: 'brightness(70%)',
-            easing: 'easeInOutQuad',
-            duration: 250,
-        });
+        console.log(boundingRect);
+        // window.location = `#${cardName}`;
         anime({
             targets: [contentElement],
             left: '0px',
             width: '100%',
+            height: window.innerHeight,
             bottom: '0px',
             top: '0px',
-            height: '100%',
             easing: 'easeInOutQuad',
             duration: 400,
             complete: (anim) => {
                 window.location = `${cardName}.html`;
             },
+        });
+        anime({
+            targets: [element],
+            minHeight: '25rem',
+            filter: 'brightness(70%)',
+            easing: 'easeInOutQuad',
+            duration: 400,
         });
     }
 }

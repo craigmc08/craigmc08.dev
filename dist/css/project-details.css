@@ -4,6 +4,7 @@
 
 .pd-splash-image {
     width: 100%;
+    min-height: 25rem;
     max-height: 25rem;
     object-fit: cover;
     filter: brightness(70%);
@@ -33,6 +34,7 @@
     margin-bottom: 3rem;
     font-size: 3rem;
     width: 25rem;
+    color: #679;
 }
 
 .place-pd-cont, .inner {
