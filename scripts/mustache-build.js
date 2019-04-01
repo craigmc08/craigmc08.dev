@@ -8,9 +8,25 @@ const templates = globby.sync('templates/*.mustache');
 const templateToView = template => template.replace('.mustache', '.json');
 const templateToOutput = template => template.replace(/templates(?:\/|\\)|\.mustache/g, '');
 
+const partials = LoadPartials();
+
 async function ResolveView(view) {
     const markdownResolved = await MarkdownViewResolver(view);
     return markdownResolved;
+}
+
+function LoadPartials() {
+    const partialFiles = globby.sync('templates/partials/*.mustache');
+    const partials = partialFiles.map(partialFile => {
+        const text = fs.readFileSync(partialFile, 'utf8');
+        return {
+            name: partialFile.match(/^(?:[\w_-]+\/)*([\w_-]+)\.mustache$/)[1],
+            text,
+        };
+    });
+    const partialObject = {};
+    partials.forEach(({name, text}) => partialObject[name] = text);
+    return partialObject;
 }
 
 const renderTemplate = templateName => new Promise((resolve, reject) => {
@@ -33,7 +49,7 @@ const renderTemplate = templateName => new Promise((resolve, reject) => {
 
             Promise.all(views.map(async ({ view, name }) => {
                 const resolvedView = await ResolveView(view);
-                const output = Mustache.render(template, resolvedView);
+                const output = Mustache.render(template, resolvedView, partials);
                 const outputName = `dist/${name}.html`;
                 fs.writeFile(outputName, output, (err) => {
                     if (err) throw err;
