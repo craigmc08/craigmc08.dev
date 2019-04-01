@@ -1,0 +1,57 @@
+{
+    "languagesText": { "renderMarkdownFile": "templates/languages.md" },
+    "projects": [
+        {
+            "id": "sketchroulette",
+            "title": "sketch roulette",
+            "imageFile": "images/sketchroulette-splash.png",
+            "description": "<p>A multiplayer web-app game about drawing.</p>",
+            "repository": "https://github.com/craigmc08/sketchroulette"
+        },
+        {
+            "id": "raytracing",
+            "title": "raytracing",
+            "imageFile": "images/raytracing-splash.png",
+            "description": "<p>A raytraced 3d-rendering engine. Uses ray marching, constructive solid geometry, and has support for a few materials.</p>",
+            "repository": "https://github.com/craigmc08/raytracing"
+        },
+        {
+            "id": "tokenary",
+            "title": "tokenary",
+            "imageFile": "images/tokenary-splash.png",
+            "description": "<p>A javascript text tokenizer library.</p>",
+            "repository": "https://github.com/craigmc08/tokenary"
+        },
+        {
+            "id": "electric-fields",
+            "title": "electric fields",
+            "imageFile": "images/electric-fields-splash.png",
+            "description": "<p>A web page that visualizes 2d electric fields from point charges. <a href=\"https://craigmc08.github.io/electric-fields/\">View it live.</a></p>",
+            "repository": "https://github.com/craigmc08/electric-fields"
+        },
+        {
+            "id": "ski-heat-map",
+            "title": "ski heat map",
+            "imageFile": "images/ski-heat-map-splash.png",
+            "description": "<p>Command line tool to generate maps showing where you have skied the most.</p>",
+            "repository": "https://github.com/craigmc08/ski-heat-map"
+        }
+    ],
+    "socialMedia": [
+        {
+            "link": "https://github.com/craigmc08",
+            "icon": "icons/icons8-github-48.png",
+            "name": "github"
+        },
+        {
+            "link": "https://twitter.com/craigmc08",
+            "icon": "icons/icons8-twitter-squared-48.png",
+            "name": "twitter"
+        },
+        {
+            "link": "https://dev.to/craigmc08",
+            "icon": "icons/icons8-globe-48.png",
+            "name": "dev.to"
+        }
+    ]
+}
