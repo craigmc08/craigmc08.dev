@@ -40,7 +40,7 @@ function CreateProjectDetailSkeleton(parent) {
  */
 function expandCard(element, cardName) {
     return function(e) {
-        if (e.target.nodeName === 'A') return;
+        if (e.target.nodeName === 'A' || e.target.parentNode.nodeName === 'A') return;
 
         const boundingRect = element.getBoundingClientRect();
     
