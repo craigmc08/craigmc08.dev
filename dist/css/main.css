@@ -18,6 +18,9 @@ h1.not-so-huge {
     font-size: 4rem;
     display: inline-block;
 }
+h1 {
+    color: #679;
+}
 
 .circle-period::after {
     content: '.';
@@ -43,10 +46,10 @@ h1.not-so-huge {
     height: 2rem;
     margin-bottom: 3rem;
 }
-.sub-heading h2 {
+.sub-heading h2, h2 {
     color: #679;
     background-color: white;
-    width: min-content;
+    width: fit-content;
     padding-right: 1.5rem;
 }
 
