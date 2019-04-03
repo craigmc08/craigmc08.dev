@@ -96,3 +96,13 @@ function expandCard(element, cardName) {
         });
     }
 }
+
+function PadBodyForFooter() {
+    const footer = document.querySelector('footer');
+    if (footer) {
+        const rect = footer.getBoundingClientRect();
+        document.body.style.paddingBottom = `${rect.height}px`;
+    }
+}
+window.addEventListener('load', PadBodyForFooter);
+window.addEventListener('resize', PadBodyForFooter);

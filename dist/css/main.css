@@ -4,6 +4,12 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
 }
 
 h1.huge {
@@ -53,9 +59,19 @@ h1 {
     padding-right: 1.5rem;
 }
 
+h2 {
+    margin-bottom: 1rem;
+}
+
 footer ul, footer h5 {
     margin-top: 0em;
     margin-bottom: 0em;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 @media (max-width: 50rem) {
     footer > grid > div:not(:last-child) {
