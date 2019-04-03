@@ -1,0 +1,35 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+	<title>Experience</title>
+
+	{{>headmeta}}
+	
+	<meta charset=utf-8>
+	<meta name="description" content="craig mcilwrath">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	
+	<link href="css/bare.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<label>
+			<input type="checkbox">
+			<header>
+				<a href="https://craigmc08.dev"><img src="images/logo.png">craig mcilwrath</a>
+			</header>
+			
+			{{>nav}}
+		</label>
+	</nav>
+
+	<section>
+        {{{content}}}
+    </section>
+
+    {{>footer}}
+
+	<script src="js/index.js"></script>
+</body>
+</html>
