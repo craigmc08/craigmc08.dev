@@ -5,7 +5,7 @@
             "name": "raytracing",
             "view": {
                 "title": "raytracing",
-                "imageFile": "images/raytracing-splash.png",
+                "imageFile": "images/raytracing-splash.jpg",
                 "text": { "renderMarkdownFile": "templates/details/raytracing.md" }
             }
         },
@@ -13,7 +13,7 @@
             "name": "ski-heat-map",
             "view": {
                 "title": "ski heat map",
-                "imageFile": "images/ski-heat-map-splash.png",
+                "imageFile": "images/ski-heat-map-splash.jpg",
                 "text": { "renderMarkdownFile": "templates/details/ski-heat-map.md" }
             }
         },
@@ -21,7 +21,7 @@
             "name": "sketchroulette",
             "view": {
                 "title": "sketch roulette",
-                "imageFile": "images/sketchroulette-splash.png",
+                "imageFile": "images/sketchroulette-splash.jpg",
                 "text": { "renderMarkdownFile": "templates/details/sketchroulette.md" }
             }
         },
@@ -29,7 +29,7 @@
             "name": "electric-fields",
             "view": {
                 "title": "electric fields",
-                "imageFile": "images/electric-fields-splash.png",
+                "imageFile": "images/electric-fields-splash.jpg",
                 "text": { "renderMarkdownFile": "templates/details/electric-fields.md" }
             }
         },
