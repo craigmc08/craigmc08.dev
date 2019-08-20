@@ -37,6 +37,10 @@ Developed a website that could view transactions made with Bitcoin, Dogecoin, an
   - Chemistry 800/800
   - Physics 800/800
 
+### Awards
+
+- University of Rochester Bausch & Lomb Honorary Science Award
+
 ## Extracurriculars
 
 - Math Team: chosen for school's state competition team
