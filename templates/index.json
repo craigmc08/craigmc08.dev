@@ -18,7 +18,7 @@
             "id": "tokenary",
             "title": "tokenary",
             "imageFile": "images/tokenary-splash.png",
-            "description": "<p>A javascript text tokenizer library.</p>",
+            "description": "<p>A JavaScript text tokenizer library.</p>",
             "repository": "https://github.com/craigmc08/tokenary"
         },
         {
