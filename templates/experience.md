@@ -40,6 +40,7 @@ Developed a website that could view transactions made with Bitcoin, Dogecoin, an
 ### Awards
 
 - University of Rochester Bausch & Lomb Honorary Science Award
+- National Merit Semifinalist
 
 ## Extracurriculars
 
