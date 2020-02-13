@@ -40,6 +40,14 @@
                 "imageFile": "images/tokenary-splash.png",
                 "text": { "renderMarkdownFile": "templates/details/tokenary.md" }
             }
+        },
+        {
+            "name": "haskell-raytracer",
+            "view": {
+                "title": "haskell raytracer",
+                "imageFile": "images/hs-rt-splash.jpg",
+                "text": { "renderMarkdownFile": "templates/details/haskell-raytracer.md" }
+            }
         }
     ]
 }

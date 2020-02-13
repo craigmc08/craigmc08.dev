@@ -34,6 +34,13 @@
             "imageFile": "images/ski-heat-map-splash.jpg",
             "description": "<p>Command line tool to generate maps showing where you have skied the most.</p>",
             "repository": "https://github.com/craigmc08/ski-heat-map"
+        },
+        {
+            "id": "haskell-raytracer",
+            "title": "haskell raytracer",
+            "imageFile": "images/hs-rt-splash.jpg",
+            "description": "<p>Raytraced 3d-rendering engine written in Haskell. Uses polygon meshes instead of CSG.</p>",
+            "repository": "https://github.com/craigmc08/haskell-raytracer"
         }
     ],
     "socialMedia": [

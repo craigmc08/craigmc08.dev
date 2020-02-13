@@ -15,6 +15,9 @@ I have worked extensively with JavaScript. Many of the projects I create are in 
 
 I also have used JavaScript with node.js to create server-side and command line applications. This is definitely the language I am most comfortable with.
 
+## Haskell
+I began learning Haskell in August, 2019. I am now comfortable in the language and consider myself proficient with the functional programming style. My current project with this is a raytraced rendering engine. Check out the project page [here](/haskell-raytracer).
+
 ## C Sharp
 Mainly, I have used C# with the Unity Game Engine to create 3d projects or games. I'm quite comfortable with the syntax and programming patterns in this language.
 
