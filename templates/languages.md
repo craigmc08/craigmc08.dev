@@ -2,6 +2,7 @@
 I am comfortable programming in any of the languages listed below. Here is an overview of all the languages I would say I know:
 
 - JavaScript
+- TypeScript
 - C#
 - Java
 - Python
@@ -14,6 +15,9 @@ Here is a more in-depth explanation of my connection with each language.
 I have worked extensively with JavaScript. Many of the projects I create are in JavaScript. I've used large frameworks like React (with WebPack and Babel), but I can still create web pages/applications without (or with minimal) libraries.
 
 I also have used JavaScript with node.js to create server-side and command line applications. This is definitely the language I am most comfortable with.
+
+## TypeScript
+During my internship with AirTank during the summer of 2019, I worked a lot with TypeScript writing server-side node.js code for a REST API. I have a good understanding of the language's type system.
 
 ## Haskell
 I began learning Haskell in August, 2019. I am now comfortable in the language and consider myself proficient with the functional programming style. My current project with this is a raytraced rendering engine. Check out the project page [here](/haskell-raytracer).

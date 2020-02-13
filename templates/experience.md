@@ -1,8 +1,12 @@
 # Experience
 
-## Internship at AirTank, Summer 2016
+## Internships at AirTank
 
-Developed a website that could view transactions made through Bitcoin, Dogecoin, and ziftrCOIN.
+##### Summer 2019
+Wrote OpenAPI documentation for AirTank's ecommerce platform's REST API. Worked on a refactor of the REST API's server in TypeScript.
+
+##### Summer 2016
+Developed a website that could view transactions made with Bitcoin, Dogecoin, and ziftrCOIN.
 
 ## Academics
 
@@ -32,6 +36,11 @@ Developed a website that could view transactions made through Bitcoin, Dogecoin,
   - Mathematics Level 2 800/800
   - Chemistry 800/800
   - Physics 800/800
+
+### Awards
+
+- University of Rochester Bausch & Lomb Honorary Science Award
+- National Merit Semifinalist
 
 ## Extracurriculars
 

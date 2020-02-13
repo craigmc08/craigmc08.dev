@@ -9,9 +9,9 @@
   "private": true,
   "scripts": {
     "start": "rollup -c -w -m",
-    "build": "npm run build-scripts & npm run build-templates",
+    "build": "node scripts/build-combined",
     "build-scripts": "rollup -c",
-    "build-templates": "node scripts/mustache-build.js"
+    "build-templates": "node scripts/mustache-build"
   },
   "devDependencies": {
     "globby": "^9.1.0",
