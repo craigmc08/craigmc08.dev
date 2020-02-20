@@ -2,13 +2,15 @@
 
 ## Internships at AirTank
 
-##### Summer 2019
+##### Summer 2019 to Present
 Wrote OpenAPI documentation for AirTank's ecommerce platform's REST API. Worked on a refactor of the REST API's server in TypeScript.
 
 ##### Summer 2016
 Developed a website that could view transactions made with Bitcoin, Dogecoin, and ziftrCOIN.
 
 ## Academics
+
+**Rivier University**: Linear Algebra course, 4.0
 
 **High School Graduation**: June 2020
 
@@ -40,9 +42,10 @@ Developed a website that could view transactions made with Bitcoin, Dogecoin, an
 ### Awards
 
 - University of Rochester Bausch & Lomb Honorary Science Award
-- National Merit Semifinalist
+- National Merit Finalist
+- U.S. Presidential Scholars Nominee
 
 ## Extracurriculars
 
-- Math Team: chosen for school's state competition team
+- Math Team: Varsity Captain team; won season championship
 - Destination Imagination: qualified for Global Finals 5/6 years; won Renaissance Award for handmade wooden flute
